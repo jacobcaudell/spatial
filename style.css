@@ -17,11 +17,17 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.video-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+.video-gallery iframe {
+  margin: 0 auto;
+}
+
+iframe {
+  width: 90%;
+  max-width: 960px;
+  height: 540px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 video {
