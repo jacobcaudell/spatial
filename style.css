@@ -17,6 +17,43 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.video-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: #ccc;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-block {
+  margin-bottom: 4rem;
+}
+
+.video-block h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.video-caption {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #bbb;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
 .video-gallery iframe {
   margin: 0 auto;
 }
@@ -41,4 +78,28 @@ footer {
   margin-top: 4rem;
   font-size: 0.9rem;
   color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 315px;
+  }
+  
+  .video-caption {
+    font-size: 0.9rem;
+  }
 }

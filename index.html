@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gasson Renders – Caudell Spatial</title>
+  <title>Gasson Renders – Caudell Spatial Intelligence</title>
+  <link rel="icon" type="image/png" href="assets/CSI_logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,11 +14,29 @@
   </header>
 
   <section class="video-gallery">
-    <h2>Gasson Hall – Metashape Render</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FWhEO5AJs8I?si=1oSppfNgDeR9N6VU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p class="description">
+      Both renders originate from a single drone capture of Gasson Hall. The first showcases a classical photogrammetry workflow in Metashape; the second retrains on the same dataset using a neural radiance field via Nerfstudio. Part of an ongoing exploration in high-fidelity architectural visualization.
+    </p>
 
-    <h2>Gasson Hall – Nerfstudio Render</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rxRdvqwOEvo?si=jcPH17tNypgAUQ4n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-block">
+      <h2>Metashape Render</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FWhEO5AJs8I?si=1oSppfNgDeR9N6VU" title="Metashape Render" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="video-caption">
+        <strong>Captured</strong> with a DJI Matrice 4 Enterprise.<br>
+        <strong>Processed</strong> in Metashape on a <strong>cloud H100 GPU</strong>: image alignment, scene cropping, dense cloud generation, mesh reconstruction, and <strong>UV-based texture mapping</strong> using the standard photogrammetry pipeline.<br>
+        <strong>Flythrough</strong> authored and rendered in Metashape, exported to Blender for logo overlay and final rendering.
+      </p>
+    </div>
+
+    <div class="video-block">
+      <h2>Nerfstudio Render</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rxRdvqwOEvo?si=jcPH17tNypgAUQ4n" title="Nerfstudio Render" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="video-caption">
+        <strong>Input</strong> data and camera poses exported from Metashape for consistency.<br>
+        <strong>Processed</strong> in Nerfstudio with nerfacto neural reconstruction trained on a <strong>cloud H100 GPU</strong>.<br>
+        <strong>Flythrough</strong> authored and rendered in Nerfstudio, exported to Blender for logo overlay and final rendering.
+      </p>
+    </div>
   </section>
 
   <footer>
