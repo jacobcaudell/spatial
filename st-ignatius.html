@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>St. Ignatius: Splat Rendering – Caudell Spatial Intelligence</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='white'/><text x='50' y='65' font-family='Arial, sans-serif' font-size='50' text-anchor='middle' fill='%23000'>G</text></svg>">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/CSI_logo.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/CSI_logo.png">
-  <link rel="apple-touch-icon" href="assets/CSI_logo.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/CSI_logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Ignatius Statue - 3D Line Drawing Splats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="assets/CSI_logo.png" alt="Caudell Spatial Logo" class="logo" />
-    <h1>St. Ignatius: Splat Rendering</h1>
+    <header>
+        <img src="assets/CSI_logo.png" alt="CSI Logo" class="logo">
+        <h1>St. Ignatius Statue: 3D Line Drawing Splats</h1>
+    </header>
+
     <nav class="main-nav">
-      <a href="index.html" class="nav-link">Gasson Hall</a>
-      <a href="st-ignatius.html" class="nav-link active">St. Ignatius</a>
+        <a href="index.html" class="nav-link">Gasson Hall</a>
+        <a href="st-ignatius.html" class="nav-link active">St. Ignatius Statue</a>
     </nav>
-  </header>
 
-  <section class="video-gallery">
-    <p class="description">
-      Splat rendering represents the cutting edge of real-time 3D visualization, 
-      transforming point clouds into interactive, photorealistic experiences. 
-      This approach enables dynamic exploration of architectural spaces with 
-      unprecedented detail and performance.
-    </p>
+    <div class="video-gallery">
+        <p class="description">
+            This statue of St. Ignatius Loyola stands on the Boston College campus. The 3D visualization below showcases a hybrid contour style with watercolor elements, created using Amrit Kwatra's innovative approach to 3D Gaussian Splatting. His method transforms drone-captured photographs into informative line drawings that preserve geometry and semantics, then trains 3D Gaussian Splats on these stylized images to create interactive 3D line drawings.
+        </p>
 
-    <hr style="border: none; height: 1px; background: rgba(255,255,255,0.1); margin: 2rem 0;">
+        <div class="video-block">
+            <p class="tag">Hybrid Contour Style</p>
+            <h2>St. Ignatius Statue - Interactive 3D Line Drawing</h2>
+            <div class="iframe-wrapper" style="width: 100%; height: 600px; margin: 1rem 0;">
+                <iframe
+                    src="https://www.useblurry.com/reconstruction/caudell-ignatius-hybrid-contour-6mGs6KCJ?embed=true"
+                    title="St. Ignatius Statue 3D Line Drawing Viewer"
+                    style="width: 100%; height: 100%; border: none; border-radius: 8px;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
 
-    <div class="video-block">
-      <p class="tag">Splat Rendering</p>
-      <h2>St. Ignatius Church</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/PLACEHOLDER_ID" title="St. Ignatius Splat Render" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p class="video-caption">
-        <strong>Technology</strong>: Gaussian Splatting for real-time rendering<br>
-        <strong>Processing</strong>: Advanced point cloud optimization and splat generation<br>
-        <strong>Output</strong>: Interactive 3D visualization with photorealistic quality
-      </p>
+        <div class="video-block">
+            <p class="tag">Technical Details</p>
+            <h2>Processing Pipeline</h2>
+            <p class="video-caption">
+                <strong>Method</strong>: Images transformed to line drawings using <a href="https://carolineec.github.io/informative_drawings/" target="_blank" style="color: #64b5f6;">Chan et al.'s GAN approach</a><br>
+                <strong>Training</strong>: 3D Gaussian Splats trained on stylized line drawing images<br>
+                <strong>Result</strong>: Interactive 3D line drawings that preserve scene geometry<br>
+                <strong>Credit</strong>: Splatting work by <a href="https://amritkwatra.com/experiments/3d-line-drawings" target="_blank" style="color: #64b5f6;">Amrit Kwatra</a>
+            </p>
+        </div>
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 Caudell Spatial Intelligence</p>
-  </footer>
+    <footer>
+        <p>&copy; 2024 Caudell Spatial Intelligence. All rights reserved.</p>
+    </footer>
 </body>
 </html>
