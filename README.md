@@ -1,14 +1,21 @@
-# Gasson Hall Renders - Caudell Spatial Intelligence
+# Caudell Spatial Intelligence - 3D Visualization Portfolio
 
-A showcase of high-fidelity architectural visualization comparing classical photogrammetry (Metashape) and neural radiance fields (Nerfstudio) workflows.
+A showcase of cutting-edge 3D reconstruction and visualization technologies, featuring multiple architectural projects and rendering approaches.
+
+## Projects
+
+### Gasson Hall: Photogrammetry vs Neural Reconstruction
+A comparison of classical photogrammetry (Metashape) and neural radiance fields (Nerfstudio) workflows using drone imagery from Boston College's Gasson Hall.
+
+### St. Ignatius: Splat Rendering
+Advanced splat rendering technology demonstrating real-time 3D visualization with unprecedented detail and performance.
 
 ## Overview
 
-This project demonstrates two different approaches to 3D reconstruction from drone imagery:
-- **Metashape Render**: Classical photogrammetry pipeline with dense cloud generation and mesh reconstruction
-- **Nerfstudio Render**: Neural radiance field reconstruction using the same input dataset
-
-Both renders originate from a single drone capture of Gasson Hall at Boston College.
+This portfolio demonstrates the evolution of 3D reconstruction technologies:
+- **Classical Photogrammetry**: Traditional dense cloud generation and mesh reconstruction
+- **Neural Radiance Fields**: AI-powered reconstruction using NeRF technology
+- **Splat Rendering**: Cutting-edge real-time visualization with Gaussian splatting
 
 ## Deployment
 
@@ -40,11 +47,12 @@ php -S localhost:8000
 ## Project Structure
 ```
 spatial/
-├── index.html          # Main page
-├── style.css           # Styling
-├── README.md           # This file
+├── index.html              # Gasson Hall project page
+├── st-ignatius.html        # St. Ignatius project page
+├── style.css               # Shared styling
+├── README.md               # This file
 └── assets/
-    ├── CSI_logo.png    # Company logo
+    ├── CSI_logo.png        # Company logo
     ├── gasson_metashape.mp4    # Metashape render video
     └── gasson_nerfstudio.mp4   # Nerfstudio render video
 ```
@@ -53,8 +61,8 @@ spatial/
 
 - **Drone**: DJI Matrice 4 Enterprise
 - **Processing**: Cloud H100 GPU instances
-- **Software**: Metashape, Nerfstudio, Blender
-- **Output**: High-resolution architectural flythroughs
+- **Software**: Metashape, Nerfstudio, Gaussian Splatting
+- **Output**: High-resolution architectural flythroughs and real-time visualization
 
 ## License
 
